@@ -14,10 +14,10 @@ export const Container = styled.div`
 
   ul {
     list-style: none;
-    width: 130px;
+    width: 100px;
 
     li {
-      width: 85%;
+      width: 100%;
       border-top: 1px solid #cccccc;
       display: flex;
       justify-content: center;

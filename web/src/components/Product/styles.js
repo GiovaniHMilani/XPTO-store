@@ -6,7 +6,8 @@ export const Container = styled.div`
   background: #ffffff;
   box-shadow: 0px 10px 20px #16319b29;
   border-radius: 3px;
-  margin-top: 55px;
+  margin-top: 30px;
+  margin-bottom: 25px;
 
   img {
     height: 187px;
