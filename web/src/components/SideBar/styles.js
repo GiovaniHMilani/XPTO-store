@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 130px;
   background-color: #ffffff;
   box-shadow: 0px 3px 50px #00000029;
-  position: absolute;
+  position: fixed;
   padding-left: 10px;
   padding-right: 10px;
   img {
