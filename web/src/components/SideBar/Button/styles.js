@@ -9,7 +9,6 @@ export const ContainerLink = styled(Link)`
   padding: 37px;
   text-decoration: none;
   color: #000000;
-
   img {
     padding: 0px;
   }

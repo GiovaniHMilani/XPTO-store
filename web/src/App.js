@@ -14,9 +14,15 @@ export default function App() {
       const response = await Axios.get(
         'http://www.mocky.io/v2/5d3b57023000005500a2a0a6'
       );
+      const produtos = response.data.produtos.map(item => {
+        return {
+          ...item,
+          favorite: false,
+        };
+      });
       dispatch({
         type: 'SAVE_PRODUCTS',
-        products: response.data.produtos,
+        products: produtos,
       });
     };
     getValues();

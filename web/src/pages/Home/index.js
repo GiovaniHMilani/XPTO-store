@@ -11,8 +11,9 @@ export default function Home() {
   return (
     <Container>
       <Header />
-      <ContainerProdutos>
-        {Products && Products.map(item => <Product item={item} />)}
+      <ContainerProdutos quant={Products.length}>
+        {Products &&
+          Products.map(item => <Product key={item.id} item={item} />)}
       </ContainerProdutos>
     </Container>
   );

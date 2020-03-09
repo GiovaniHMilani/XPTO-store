@@ -6,17 +6,20 @@ import Header from '../../components/Header';
 
 import Product from '../../components/Product';
 
-export default function Favorites() {
+export default function Promocao() {
   const Products = useSelector(state => state.product.products);
 
-  const ProdutosFavoritos = Products && Products.filter(item => item.favorite);
+  const ProdutosPromocao = Products && Products.filter(item => item.promocao);
 
   return (
     <Container>
-      <Header />
+      <Header
+        titulo="Conheça nossas promoções"
+        description="Listagem de produtos em promoção - clique no produto desejado para saber mais"
+      />
       <ContainerProdutos>
-        {Products &&
-          ProdutosFavoritos.map(item => <Product key={item.id} item={item} />)}
+        {ProdutosPromocao &&
+          ProdutosPromocao.map(item => <Product key={item.id} item={item} />)}
       </ContainerProdutos>
     </Container>
   );
